@@ -4,7 +4,7 @@ public abstract class Bird extends Animal{
 
     private int heightOfFlight;
 
-    public Bird(int height, int weight, String eyeColor, String color, int heightOfFlight){
+    public Bird(int height, int weight, String eyeColor, int heightOfFlight){
         super(height, weight, eyeColor);
         this.heightOfFlight = heightOfFlight;
     }
@@ -16,7 +16,7 @@ public abstract class Bird extends Animal{
     }
 
     public String printInfo(){
-        return String.format("%s\nheight of fly: %d", super.printInfo(), this.heightOfFlight);
+        return String.format("%s height of fly: %d", super.printInfo(), this.heightOfFlight);
     }
 
 }

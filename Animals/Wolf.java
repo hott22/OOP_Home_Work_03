@@ -1,7 +1,7 @@
 package Animals;
 
 public class Wolf extends WildAnimal{
-    boolean leaderPack;
+    protected boolean leaderPack;
 
     public Wolf(int height, int weight, String eyeColor, String lifeArea, String dateOfFound, boolean leaderPack) {
         super(height, weight, eyeColor, lifeArea, dateOfFound);

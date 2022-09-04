@@ -3,7 +3,8 @@ public class Dog extends HomeAnimal {
     protected Boolean trained;
 
     /**Конструктор */
-    public Dog(int height, int weight, String eyeColor, String name, String breed, Boolean vaccinated, String color, String dateOfBirth, Boolean trained){
+    public Dog(int height, int weight, String eyeColor, String name,
+               String breed, Boolean vaccinated, String color, String dateOfBirth, Boolean trained){
         super(height, weight, eyeColor, name, breed, vaccinated, color, dateOfBirth);
         this.trained = trained;
     }

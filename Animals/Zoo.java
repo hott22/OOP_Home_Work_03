@@ -29,7 +29,12 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Zoo {
-    //List<Animal> animalList = new ArrayList<>();
+    List<Animal> animalList1;
+
+    public Zoo(List <Animal> animalList1){
+        this.animalList1 = animalList1;
+    }
+
 
     public void addAnimal(Animal animal, List<Animal> animalList1){
         animalList1.add(animal);
@@ -50,15 +55,14 @@ public class Zoo {
 
 
     public void allInfoAnimal(List<Animal> animalList1){
-        for (int i = 0; i < animalList1.size(); i++) {
-            System.out.println(animalList1.get(i).printInfo());
+        for (Animal animal : animalList1) {
+            System.out.println(animal.getClass().getSimpleName() + ": " + animal.printInfo());
         }
-
     }
 
     public void allSound(List<Animal> animalList1){
-        for (int i = 0; i < animalList1.size(); i++) {
-            animalList1.get(i).makeSound();
+        for (Animal animal : animalList1) {
+            animal.makeSound();
         }
     }
 
