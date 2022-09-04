@@ -22,12 +22,6 @@ public class Program {
 
         List<Animal> array = new ArrayList<>();
         Zoo zoo = new Zoo(array);
-/*        zoo.addAnimal(cat1, array);
-        zoo.addAnimal(dog1, array);
-        zoo.addAnimal(wolf, array);
-        zoo.addAnimal(tigerLeo, array);
-        zoo.allInfoAnimal(array);*/
-
         while (true) {
             System.out.println("Choose an action: \n" +
                     "1 - add animal \n" +
@@ -54,14 +48,14 @@ public class Program {
 
                 int choise2 = scanner.nextInt();
                 switch (choise2) {
-                    case 1 -> zoo.addAnimal(chicken, array);
-                    case 2 -> zoo.addAnimal(cat1, array);
-                    case 3 -> zoo.addAnimal(dog1, array);
-                    case 4 -> zoo.addAnimal(wolf, array);
-                    case 5 -> zoo.addAnimal(Ku, array);
-                    case 6 -> zoo.addAnimal(dogBouncy, array);
-                    case 7 -> zoo.addAnimal(stork1, array);
-                    case 8 -> zoo.addAnimal(tigerLeo, array);
+                    case 1 -> zoo.addAnimal(chicken);
+                    case 2 -> zoo.addAnimal(cat1);
+                    case 3 -> zoo.addAnimal(dog1);
+                    case 4 -> zoo.addAnimal(wolf);
+                    case 5 -> zoo.addAnimal(Ku);
+                    case 6 -> zoo.addAnimal(dogBouncy);
+                    case 7 -> zoo.addAnimal(stork1);
+                    case 8 -> zoo.addAnimal(tigerLeo);
                 }
 
             }
@@ -71,7 +65,7 @@ public class Program {
                     System.out.printf((i + 1) + ": " + array.get(i).getClass().getSimpleName() + "\n");
                 }
                 int choise3 = scanner.nextInt();
-                zoo.delAnimal(choise3 - 1, array);
+                zoo.delAnimal(choise3 - 1);
 
             }
 
@@ -81,7 +75,7 @@ public class Program {
                 }
                 System.out.println("Enter the number of the animal to view the information: ");
                 int choise4 = scanner.nextInt();
-                zoo.infoAnimal(choise4 - 1, array);
+                zoo.infoAnimal(choise4 - 1);
             }
             if (choise1 == 4){
                 for (int i = 0; i < array.size(); i++) {
@@ -89,15 +83,15 @@ public class Program {
                 }
                 System.out.println("Enter the number of the animal to make sound: ");
                 int choise5 = scanner.nextInt();
-                zoo.sound(choise5 - 1, array);
+                zoo.sound(choise5 - 1);
             }
 
             if (choise1 == 5){
-                zoo.allInfoAnimal(array);
+                zoo.allInfoAnimal();
             }
 
             if (choise1 == 6){
-                zoo.allSound(array);
+                zoo.allSound();
             }
 
             if (choise1 == 7){

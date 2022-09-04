@@ -36,31 +36,32 @@ public class Zoo {
     }
 
 
-    public void addAnimal(Animal animal, List<Animal> animalList1){
+    public void addAnimal(Animal animal){
+
         animalList1.add(animal);
     }
 
-    public void delAnimal(int number, List<Animal> animalList1){
+    public void delAnimal(int number){
         animalList1.remove(number);
     }
 
-    public void infoAnimal(int number, List<Animal> animalList1){
+    public void infoAnimal(int number){
         animalList1.get(number).getClass().getSimpleName();
         System.out.println(animalList1.get(number).printInfo());
     }
 
-    public void sound(int number, List<Animal> animalList1){
+    public void sound(int number){
         animalList1.get(number).makeSound();
     }
 
 
-    public void allInfoAnimal(List<Animal> animalList1){
+    public void allInfoAnimal(){
         for (Animal animal : animalList1) {
             System.out.println(animal.getClass().getSimpleName() + ": " + animal.printInfo());
         }
     }
 
-    public void allSound(List<Animal> animalList1){
+    public void allSound(){
         for (Animal animal : animalList1) {
             animal.makeSound();
         }
