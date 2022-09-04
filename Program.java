@@ -97,6 +97,7 @@ public class Program {
             if (choise1 == 7){
                 break;
             }
+            scanner.close();
         }
     }
 }
